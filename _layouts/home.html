@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<h1 class="row">
+Welcome to the <span>online portfolio</span> of Kun Zhou, program designer in <span>Sydney, Australia</span>.
+</h1>
+<div class="row">
+    <div class="left-column col-md-8">
+        <div class="table-row row">
+            <div class="col-md-2 col-md-height pre-pic">
+            <a href="#">
+                <img src="assets/images/frame.gif" alt="..">
+            </a>
+            </div>
+            <div class="col-md-10 article col-md-height">
+                <h2>About me</h2>
+                <div class="detail">
+                <p>Software Engineering qualified industry experienced team-oriented DevOp with good work ethic keep seeking to attain a challenging position in Australia that provides opportunity to apply up-to-date knowledge in IT.</p>
+                </div>
+            </div>
+        </div>
+        <div class="table-row row">
+            <div class="col-md-2 col-md-height pre-pic">
+            <a href="#">
+                <img src="assets/images/info.gif" alt="..">
+            </a>
+            </div>
+            <div class="col-md-10 article col-md-height">
+                <h2>Skills</h2>
+                <div class="detail">
+                    <p>Developing from 2010. Intermediate level in Java, C#, python. Familiar with Web development including PHP, Ruby on Rails, JavaScript, HTML5, CSS. Able to use advanced technique structure to deliver successful business solution.</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="table-row row">
+            <div class="col-md-2 col-md-height pre-pic">
+                <a href="#">
+                    <img src="assets/images/movie.gif" alt="..">
+                </a>
+            </div>
+            <div class="col-md-10 article col-md-height">
+                <h2>One more thing</h2>
+                <div class="detail">
+                    <p>Basketball, Tennis, Badminton, Movie, Gaming. South Park is my favourite cartoon. I am always exciting to be part of the wonderful-experience journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-column col-md-4">
+        <div class="blog">
+            <h2>From the Blog<a href="feed.xml"><img src="assets/images/rss.gif" alt="rss"></a></h2>
+           
+
+
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <div class="table">
+      {%- assign date_format = site.minima.date_format | default: "%b %d, %y" -%}
+      {%- for post in posts -%}
+      <div class="table-row row">
+          <div class="row-left-column col-md-2">{{ post.date | date: date_format }}</div>
+          <div class="row-right-column col-md-10">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </div>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+
+    {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+        {%- if paginator.previous_page %}
+          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+          <li><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+        </ul>
+      </div>
+    {%- endif %}
+
+  {%- endif -%}    
+                
+                              
+           
+            <div class="social">
+                <h2>Social Media</h2>
+
+                <ul class="social-list">
+                    <li><a href="https://github.com/jeremy-kunzhou"><img src="assets/images/github.png" alt="github"></a></li>
+                    <li><a href="http://www.linkedin.com/pub/kun-zhou/30/7a8/9a8"><img src="assets/images/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="https://www.facebook.com/jeremy.kunzhou"><img src="assets/images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/intent/user?screen_name=jeremy_kunzhou"><img src="assets/images/twitter.png" alt="social"></a></li>
+                    <li><a href="mailto:jeremy.kunzhou@gmail.com"><img src="assets/images/mail.png" alt="social1"></a></li>
+                 </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

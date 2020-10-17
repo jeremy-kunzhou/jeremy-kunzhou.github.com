@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <div class="wrapper row">
+      <div class="header">
+          <div class="logo row"><img src="/assets/images/logo.gif" alt="logo"></div>
+          <div class="header-nav row">
+              <ul>
+                  <li><a href="/">HOME</a></li>
+                  <li><a href="/projects">Projects</a></li>
+                  <li><a href="/assets/doc/Resume_of_Kun_Zhou.pdf">Resume</a></li>
+                  <li><a href="/blog">BLOG</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="content row">
+        {{ content }}
+      </div>
+    </div>
+
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
