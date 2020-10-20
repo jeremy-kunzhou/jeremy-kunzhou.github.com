@@ -6,6 +6,12 @@ description: > # this means to ignore newlines until "show_excerpts:"
   the realm of huhukun, the personal homepage of jeremy zhou based in Sydney.
 
 show_excerpts: false # set to true to show excerpts on the homepage
+name: realm of huhukun
+description: get news from jeremy 
+url: http://jeremy-kunzhou.github.io
+real_url: http://jeremy-kunzhou.github.io
+github:
+  url: http://jeremy-kunzhou.github.io
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
