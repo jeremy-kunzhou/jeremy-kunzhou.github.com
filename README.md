@@ -10,8 +10,6 @@ version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md*
 
 [Theme preview](https://jekyll.github.io/minima/)
 
-![minima theme preview](/screenshot.png)
-
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
@@ -24,6 +22,21 @@ And then execute:
 
     $ bundle
 
+## Local jekyll with docker
+
+Thanks for [docker from BretFisher](https://github.com/BretFisher/jekyll-serve)
+
+create:
+```
+cd to empty directory
+docker run -v $(pwd):/site bretfisher/jekyll new .
+```
+
+test:
+```
+cd dir/of/your/jekyll/site
+docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve
+```
 
 ## Contents At-A-Glance
 

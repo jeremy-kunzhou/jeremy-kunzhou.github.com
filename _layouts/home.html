@@ -53,12 +53,13 @@ Welcome to the <span>online portfolio</span> of Kun Zhou, program designer in <s
            
 
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+  {%- if site.paginate -%}
+    {%- assign posts = paginator.posts -%}
+  {%- else -%}
+    {%- assign posts = site.posts -%}
+  {%- endif -%}
 
+  {%- assign max_posts = 5 -%}
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
@@ -66,7 +67,7 @@ Welcome to the <span>online portfolio</span> of Kun Zhou, program designer in <s
     {%- endif -%}
     <div class="table">
       {%- assign date_format = site.minima.date_format | default: "%b %d, %y" -%}
-      {%- for post in posts -%}
+      {%- for post in posts limit:max_posts-%}
       <div class="table-row row">
           <div class="row-left-column col-md-2">{{ post.date | date: date_format }}</div>
           <div class="row-right-column col-md-10">

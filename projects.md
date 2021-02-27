@@ -90,7 +90,7 @@ permalink: /projects/
         <div class="col-md-9">
             <h2>Matchismo(Set and match)</h2>
             <div class="project-detial">
-                <p>Double card games in one including traditional set card game and double matching game, developed under iOS 7. Check out at <a href="https://github.com/keane/Matchismo">my github</a></p>
+                <p>Double card games in one including traditional set card game and double matching game, developed under iOS 7. Check out at <a href="https://github.com/jeremy-kunzhou/Matchismo">my github</a></p>
             </div>
         </div>
     </div>
