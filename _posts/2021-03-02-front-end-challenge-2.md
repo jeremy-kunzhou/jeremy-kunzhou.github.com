@@ -11,7 +11,7 @@ Here comes my solution: [https://jeremy-kunzhou.github.io/profile-card-component
 
 And result:
 
-![Image of My Solution](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/udlaqeyuqehspxb2zi9h.jpg)
+![Image of My Solution](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Screenshots/fipqlwars9wdbtavcb8j.jpg)
 
 [frontend-mentor-url]: https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ
 [my-solution-url]: https://jeremy-kunzhou.github.io/profile-card-component/
