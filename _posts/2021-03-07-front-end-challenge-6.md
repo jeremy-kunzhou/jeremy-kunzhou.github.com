@@ -7,7 +7,7 @@ categories: program front_end
 Sixth challenge: Crowdfunding product page
 from [Frontend Mentor][frontend-mentor-url]
 
-Here comes my solution: [https://jeremy-kunzhou.github.io/crowdfunding-product-page/]
+Here comes my solution: [https://jeremy-kunzhou.github.io/crowdfunding-product-page/][my-solution-url]
 
 And result:
 
