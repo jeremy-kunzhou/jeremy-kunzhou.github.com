@@ -7,7 +7,7 @@ categories: program front_end
 Fifth challenge: Ping coming soon page
 from [Frontend Mentor][frontend-mentor-url]
 
-Here comes my solution: [https://jeremy-kunzhou.github.io/ping-coming-soon-page/]
+Here comes my solution: [https://jeremy-kunzhou.github.io/ping-coming-soon-page/][my-solution-url]
 
 And result:
 
