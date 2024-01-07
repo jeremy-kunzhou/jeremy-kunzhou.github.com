@@ -11,7 +11,7 @@ Here comes my solution: [https://multi-step-form-solution-xi.vercel.app][my-solu
 
 And result:
 
-![Image of My Solution](https://res.cloudinary.com/dz209s6jk/image/upload/…q_auto,w_900/Screenshots/zaddvq37umdrnbcyd2qz.jpg)
+![Image of My Solution](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/zaddvq37umdrnbcyd2qz.jpg)
 
 Tech Stack:
 Next.js, Tailwindcss, Tailwindcss UI
