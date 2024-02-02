@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="row thumbnail">
-        <img src="http://ticktee.herokuapp.com/users/3/projects/1/generate.jpg" alt="TickTee Progress" />
+        <img src="https://ticktee-jeremy-kunzhou.koyeb.app/users/1/projects/1/generate.jpg" alt="TickTee Progress" />
 </div>
 <div class="project">
     <div class="row">
@@ -17,7 +17,7 @@ permalink: /projects/
         <div class="col-md-9">
             <h2>TickTee</h2>
             <div class="project-detial">
-                <p>A funcy way to track progress of your personal project at <a href="http://ticktee.herokuapp.com">http://ticktee.herokuapp.com</a></p>
+                <p>A funcy way to track progress of your personal project at <a href="http://ticktee-jeremy-kunzhou.koyeb.app">http://ticktee-jeremy-kunzhou.koyeb.app</a></p>
 									<a class="btn btn-primary" href="/projects/ticktee.html">Intro to Android App</a>
             </div>
         </div>
