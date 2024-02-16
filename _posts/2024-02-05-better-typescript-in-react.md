@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! "Restore Projects"
+title: ! "Better typescript in react"
 categories: program front_end
 ---
 
@@ -13,6 +13,7 @@ After all these years with practices experience with AWS, I decided to take an e
 # 2 About Typescript in React
 
 I recently watched a video from youtuble called [I Wish I know This About Typescript & React Sooner](https://www.youtube.com/watch?v=8yyJbHdt9fw) by CoderOne. The content is intereting and shared some useful repo about TypeScript In React
+
 1. [react-typescript-cheatsheet.netlify.app](https://react-typescript-cheatsheet.netlify.app)
 2. [Type Zoo](https://github.com/pelotom/type-zoo)
 3. [ts toolbelt](https://github.com/millsp/ts-toolbelt)

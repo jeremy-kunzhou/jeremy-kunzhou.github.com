@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<h4>Task tracking (powered by <a href="http://ticktee-jeremy-kunzhou.koyeb.app" target="_blank">Ticktee</a>)</h4>
+<h4>Task tracking (powered by <a href="#ticktee">Ticktee</a>)</h4>
 <div class="row thumbnail">
         <img src="https://ticktee-jeremy-kunzhou.koyeb.app/users/1/projects/1/generate.jpg" alt="TickTee Progress" />
 </div>
@@ -23,6 +23,8 @@ permalink: /projects/
         <div class="caption">
             <h3><a href="https://vee.finance">Vee Finance</a></h3>
         </div>
+        <p>Vee.Finance is a cross-chain lending protocol for traditional financial and crypto users. It is committed to bridging the gap between traditional finance and DeFi and providing users with better digital asset management services. Its mission is to reduce barriers for traditional users to participate in DeFi and optimize the efficiency of global asset allocation.</p>
+        <p style="font-weight: bold">Tech Stack: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress</p>
         <div class="thumbnail">
             <div class="row" style="margin: 0">
                 <div class="col-4">
@@ -39,6 +41,8 @@ permalink: /projects/
         <div class="caption">
             <h3><a href="https://ftp.cash">FTP</a></h3>
         </div>
+        <p>Fountain Protocol is a decentralized multi-chain lending platform built on Oasis and Arbitrum. The protocol enables users to experience high capital efficiency and one-stop management of DeFi assets and establishes a multi-revenue protocol with a fund pool as the core and multiple application scenarios.</p>
+        <p style="font-weight: bold">Tech Stack: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress</p>
         <div class="thumbnail">
             <div class="row" style="margin: 0">
                 <div class="col-4">
@@ -57,7 +61,9 @@ permalink: /projects/
         <div class="col-md-9">
             <h2>Cornermarket</h2>
             <div class="project-detial">
-                <p>The Web3 shopping and payment ecosystem</p>
+                <p>CornerMarket is a Web3 shopping and payments ecosystem built on Sei Network, which is designed to enable small businesses to seamlessly connect with customers and build thriving local communities.
+The platform provides merchants with tools to create personalized deals, rewards, and incentives for customers, leveraging blockchain technology to securely tokenize them into NFTs. This fosters customer loyalty while ensuring transparency.</p>
+                <p style="font-weight: bold">Tech Stack: React Native, Expo, MST, TypeScript, Nest.js, MySQL, Redis, RESTful service, Jest, Detox</p>
             <div class="row">
                 <p class="col-md-2"><a href="https://apps.apple.com/us/app/cornermarket/id1659980737" target="_blank">App Store</a></p>
                 <p class="col-md-2"><a href="https://play.google.com/store/apps/details?id=co.cornermarket.app" target="_blank">Google Play</a></p>
@@ -156,13 +162,19 @@ permalink: /projects/
             </a>
         </div>
         <div class="col-md-9">
-            <h2>TickTee</h2>
+            <h2 id="ticktee">TickTee</h2>
             <div class="project-detial">
-                <p>A funcy way to track progress of your personal project at <a href="http://ticktee-jeremy-kunzhou.koyeb.app">http://ticktee-jeremy-kunzhou.koyeb.app</a></p>
-         <a class="btn btn-primary" href="/projects/ticktee.html">Intro to Android App</a>
+                <p>A funcy way to track progress of your personal project at <a href="https://ticktee-jeremy-kunzhou.koyeb.app">https://ticktee-jeremy-kunzhou.koyeb.app</a></p>
+                <div class="row">
+                <p class="col-md-2"><a href="https://ticktee-jeremy-kunzhou.koyeb.app" target="_blank">Web</a></p>
+
+                <p class="col-md-2"><a href="https://play.google.com/store/apps/details?id=v2.com.huhukun.tickteeforandroid" target="_blank">Google Play</a></p>
+            </div>
+         <!-- <a class="btn btn-primary" href="/projects/ticktee.html">Intro to Android App</a> -->
             </div>
         </div>
     </div>
+
 </div>
 <div class="project">
     <div class="row">
