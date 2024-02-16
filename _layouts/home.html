@@ -18,10 +18,10 @@ layout: default
         <h2>About me</h2>
         <div class="detail">
           <p>
-            Software Engineering qualified industry experienced team-oriented
-            Developer with good work ethic keep seeking to attain a challenging
-            position in Australia that provides opportunity to apply up-to-date
-            knowledge in IT.
+            A software engineering qualified, industry-experienced, and
+            team-oriented developer with a good work ethic keeps seeking to
+            attain a challenging position in Australia that provides an
+            opportunity to apply up-to-date skills and knowledge in IT.
           </p>
         </div>
       </div>
@@ -55,8 +55,8 @@ layout: default
         <h2>One more thing</h2>
         <div class="detail">
           <p>
-            Basketball, Tennis, Badminton, Movie, Gaming. I am always exciting
-            to be part of the wonderful-experience journey.
+            Basketball, Tennis, Badminton, Movie, Gaming. I am always excited to
+            be part of the wonderful experience journey.
           </p>
         </div>
       </div>
@@ -78,11 +78,9 @@ layout: default
       <div class="table">
         {%- assign date_format = site.minima.date_format | default: "%b %d, %y"
         -%} {%- for post in posts limit:max_posts-%}
-        <div class="table-row row">
-          <div class="row-left-column col-md-2">
-            {{ post.date | date: date_format }}
-          </div>
-          <div class="row-right-column col-md-10">
+        <div class="table-row row d-flex">
+          <div class="row-left-column">{{ post.date | date: date_format }}</div>
+          <div class="row-right-column col-md-8">
             <a class="post-link" href="{{ post.url | relative_url }}"
               >{{ post.title | escape }}</a
             >
