@@ -50,7 +50,6 @@ and open the template in the editor.
   }
   .col-md-height {
     display: table-cell;
-    float: none;
   }
 }
 @media (min-width: 1200px) {
@@ -170,6 +169,7 @@ body {
 }
 
 .left-column .table-row .pre-pic {
+  padding-top: 20px;
   text-align: center;
   vertical-align: middle;
 }
