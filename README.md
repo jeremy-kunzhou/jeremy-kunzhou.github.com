@@ -1,6 +1,6 @@
-# Realm of huhukun
+# Realm of Jeremy
 
-Welcome to the Github of **[🔗 Realm of huhukun](https://jeremy-kunzhou.github.io)**, the online portfolio of Jeremy Zhou.
+Welcome to the Github of **[🔗 Realm of Jeremy](https://jeremy-kunzhou.github.io)**, the online portfolio of Jeremy Zhou.
 
 ### Interest 🎯
 

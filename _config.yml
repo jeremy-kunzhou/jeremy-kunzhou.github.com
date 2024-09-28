@@ -1,12 +1,12 @@
-title: Realm of huhukun
+title: Realm of Jeremy
 author:
   name: jeremy zhou
   email: jeremy.kunzhou@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  the realm of huhukun, the personal homepage of jeremy zhou based in Sydney.
+  the realm of jeremy, the personal homepage of jeremy zhou based in Sydney.
 
 show_excerpts: false # set to true to show excerpts on the homepage
-name: realm of huhukun
+name: realm of jeremy
 description: get news from jeremy 
 url: http://jeremy-kunzhou.github.io
 real_url: http://jeremy-kunzhou.github.io
