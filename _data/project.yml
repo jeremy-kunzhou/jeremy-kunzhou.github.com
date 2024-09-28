@@ -1,0 +1,137 @@
+project:
+  - title: Vee Finance
+    image: project/vee/vee_1.png
+    paper: https://vee.finance
+    detail: >
+      <p>Vee.Finance is a cross-chain lending protocol for traditional financial and crypto users. It is committed to bridging the gap between traditional finance and DeFi and providing users with better digital asset management services. Its mission is to reduce barriers for traditional users to participate in DeFi and optimize the efficiency of global asset allocation.</p>
+      <img src='site.baseurl/assets/images/project/vee/vee_1.png' class='img-responsive' alt='vee homepage'>
+
+      <p style='text-align: center;'><b>Vee Homepage</b></p>
+
+      <img src='site.baseurl/assets/images/project/vee/vee_2.png' class='img-responsive' alt='vee dashboard'>
+
+      <p style='text-align: center;'><b>Vee Dashboard</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading the project</p>
+    tags:
+      - Front End
+    description: >-
+      Vee.Finance is a cross-chain lending protocol for traditional financial and crypto users
+    tech: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress
+    id: vee
+  - title: Fountain Protocol
+    image: project/ftp/ftp_1.png
+    paper: https://ftp.cash
+    detail: >
+      <p>Fountain Protocol is a decentralized multi-chain lending platform built on Oasis and Arbitrum. The protocol enables users to experience high capital efficiency and one-stop management of DeFi assets and establishes a multi-revenue protocol with a fund pool as the core and multiple application scenarios.</p>
+      <img src='site.baseurl/assets/images/project/ftp/ftp_1.png' class='img-responsive' alt='ftp homepage'>
+
+      <p style='text-align: center;'><b>Fountain Protocol Homepage</b></p>
+
+      <img src='site.baseurl/assets/images/project/ftp/ftp_2.png' class='img-responsive' alt='ftp dashboard'>
+
+      <p style='text-align: center;'><b>Fountain Protocol Dashboard</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading design and implementation</p>
+    tags:
+      - Front End
+    description: >-
+      Fountain Protocol is a decentralized multi-chain lending platform built on Oasis and Arbitrum.
+    tech: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress
+    id: ftp
+  - title: Cornermarket
+    image: project/cm/cm_app.png
+    paper: https://www.cornermarket.co/
+    detail: >
+      <p>CornerMarket is a Web3 shopping and payments ecosystem built on Sei Network, which is designed to enable small businesses to seamlessly connect with customers and build thriving local communities. The platform provides merchants with tools to create personalized deals, rewards, and incentives for customers, leveraging blockchain technology to securely tokenize them into NFTs. This fosters customer loyalty while ensuring transparency.</p>
+
+      <img src='site.baseurl/assets/images/project/cm/cm_app.png' class='img-responsive' alt='app screenshots'>
+
+      <p style='text-align: center;'><b>Cornermarket Screenshots</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading design and implementation</p>
+    tags:
+      - Mobile
+    description: >-
+      CornerMarket is a Web3 shopping and payments ecosystem built on Sei Network.
+    tech: React Native, Expo, MST, TypeScript, Nest.js, MySQL, Redis, RESTful service, Jest, Detox
+    id: cornermarket
+  - detail: >
+      <p>Cornermarket Campaign Page</p>
+
+      <img src='site.baseurl/assets/images/project/cm/cm_campaign_page.png' class='img-responsive'
+      alt='campaign'>
+
+      <p style='text-align: center;'><b>Screenshot</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading implementation</p>
+    tags:
+      - Front End
+      - Animation
+    image: project/cm/cm_campaign_page.png
+    title: Cornermarket campaign page
+    paper: https://cm-homepage.vercel.app/home
+    description: >-
+      Cornermarket Campaign Page
+    id: cornermarket-campaign
+  - detail: >
+      <p>The prototype of swarm system of Kiktech. A Real-Time turn-by-turn Navigator for Robot Control.</p>
+
+      <img src='site.baseurl/assets/images/project/robot_navigator/robot_navigator_shot1.jpg'
+      class='img-responsive' alt='screenshot'>
+
+      <p style='text-align: center;'><b>Navigator</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading design and implementation</p>
+    tags:
+      - Robotics
+    image: project/robot_navigator/robot_navigator_shot1.jpg
+    title: Robot Navigator (Prototype)
+    description: The prototype of swarm system of Kiktech. A Real-Time turn-by-turn Navigator for Robot Control.
+    tech: C#, WPF
+    id: robot-navigator
+  - detail: >
+      <p>A wonderful ordering system. It serves both restaurant and simple fast sale cafe including many useful feature specified designed for hospitality business like Sales Analysis Reporting System, Customized Menu Building System, Multiple Type of Printing Support.<br><br></p>
+
+      <p>Multiple Terminal Support: iPad, self-checkout terminal, Web Service</p>
+
+      <img src='site.baseurl/assets/images/project/KikPOS/POS_shot1.png' class='img-responsive'
+      style='max-width: 650px !important;' alt=''>
+
+      <p style='text-align: center;'><b>POS screenshot 1</b></p>
+
+          <img src='site.baseurl/assets/images/project/KikPOS/POS_shot2.png' class='img-responsive'
+      style='max-width: 650px !important;' alt=''>
+
+      <p style='text-align: center;'><b>POS screenshot 2</b></p>
+
+      <img src='site.baseurl/assets/images/project/KikPOS/iPad_shot2.png' class='img-responsive'
+      style='max-width: 650px !important;' alt=''>
+
+      <p style='text-align: center;'><b>iPad screenshot</b></p>
+
+      <img src='site.baseurl/assets/images/project/KikPOS/web_report.png' class='img-responsive'
+      style='max-width: 650px !important;' alt=''>
+
+      <p style='text-align: center;'><b>Report</b></p>
+
+      <hr>
+
+      <p><b>Responsibility</b><br>Leading design and implementation</p>
+    tags:
+      - Hospitality
+      - POS system
+    image: project/KikPOS/POS_shot1.png
+    title: KikPOS - hospitality business solution
+    description: It serves both restaurant and simple fast sale cafe including many useful feature specified designed for hospitality business
+    id: kikpos

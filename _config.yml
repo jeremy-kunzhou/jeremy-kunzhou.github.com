@@ -1,0 +1,81 @@
+title: Realm of huhukun
+author:
+  name: jeremy zhou
+  email: jeremy.kunzhou@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  the realm of huhukun, the personal homepage of jeremy zhou based in Sydney.
+
+show_excerpts: false # set to true to show excerpts on the homepage
+name: realm of huhukun
+description: get news from jeremy 
+url: http://jeremy-kunzhou.github.io
+real_url: http://jeremy-kunzhou.github.io
+github:
+  url: http://jeremy-kunzhou.github.io
+  
+# permalink: /:title
+
+#paginate
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: minima
+
+disqus: 
+  shortname: huhukun
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %d, %y"
+
+  # generate social links in footer
+  social_links:
+    twitter: jeremy-kunzhou
+    github:  jeremy-kunzhou
+    # devto: jekyll
+    # dribbble: jekyll
+    facebook: jeremy.kunzhou
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: jeremy-kunzhou
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+collections:
+  publication:
+    output: true
+
+

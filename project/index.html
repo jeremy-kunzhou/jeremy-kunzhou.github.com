@@ -1,0 +1,119 @@
+---
+layout: default
+title: Project
+permalink: /project
+description: Projects of Jeremy Zhou
+---
+
+{% assign projects = site.data.project.project %}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<div class="container py-4">
+  <p style="font-weight: 500 !important; text-transform: uppercase">Project</p>
+  <div class="row mt-3 g-3 grid">
+    {% for proj in projects %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+      <div
+        class="archive-container"
+        data-bs-toggle="modal"
+        data-bs-target="#modal{{ forloop.index }}"
+      >
+        <img
+          class="archive-img"
+          src="{{ proj.image | prepend: '/assets/images/' | relative_url }}"
+        />
+        <div class="archive-container-inner">
+          <p class="archive-title">{{ proj.title }}</p>
+          <p class="archive-description">{{ proj.description }}</p>
+          <div class="tags">
+            <p>
+              {% for tag in proj.tags %}
+              <a title="" href="">{{ tag }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal{{ forloop.index }}"
+      tabindex="-1"
+      aria-labelledby="exampleModal{{ forloop.index }}"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: none">
+            <div style="display: block !important">
+              <h5 class="modal-title" id="exampleModalLabel">
+                {{ proj.title }}
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-header">
+            <div style="display: block !important">
+              <p class="modal-description">{{ proj.description }}</p>
+              {% if proj.tech %}
+              <p class="modal-description">Tech Stack: {{ proj.tech }}</p>
+              {% endif %}
+              <p class="modal-link">
+                {% if proj.paper %}<a
+                  href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"
+                  ><i class="fas fa-external-link"></i>&nbsp; {% if proj.paper
+                  contains 'http' %} {{ proj.paper }} {% else %} Paper {% endif
+                  %}</a
+                >
+                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a
+                  href="{{ proj.video }}"
+                  ><i class="fas fa-play"></i>&nbsp; Video</a
+                >
+                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a
+                  href="/assets/pdf/{{ proj.slide }}"
+                  ><i class="fas fa-poll-h"></i>&nbsp; Slide</a
+                >
+                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a
+                  href="{{ proj.appstore }}"
+                  ><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a
+                >
+                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a
+                  href="{{ proj.code }}"
+                  ><i class="fab fa-github"></i>&nbsp; Code</a
+                >
+                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a
+                  href="{{ proj.link }}"
+                  ><i class="fas fa-external-link"></i>&nbsp; Link</a
+                >{% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="modal-body">
+            {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  var grid = document.querySelector(".grid");
+  var msnry = new Masonry(grid, {
+    // percentPosition: true,
+    itemSelector: ".grid-item",
+    // fitWidth: true,
+  });
+  imagesLoaded(grid).on("progress", function () {
+    msnry.layout();
+  });
+</script>

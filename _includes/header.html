@@ -1,0 +1,95 @@
+<header class="page-content">
+  <nav class="navbar navbar-expand-md navbar-light py-4">
+    <div class="container-fluid">
+      <div class="d-none d-md-block">
+        <img
+          src="/assets/images/misc/logo.gif"
+          class="w-100"
+          style="max-width: 225px"
+        />
+      </div>
+      <div class="d-block d-md-none">
+        <img src="/assets/images/favicon/my_icon.ico" />
+      </div>
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto mt-4 mt-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url == '/' %} active {% endif %}"
+              aria-current="page"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains 'project' %} active {% endif %}"
+              aria-current="page"
+              href="/project"
+              >Project</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains 'cv' %} active {% endif %}"
+              aria-current="page"
+              href="/cv"
+              >CV</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains 'blog' %} active {% endif %}"
+              aria-current="page"
+              href="/blog"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .dropdown-toggle {
+    background-color: transparent;
+    border-color: #fff;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+  }
+  .dropdown-toggle:hover {
+    font-weight: 500;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .dropdown-menu {
+    --bs-dropdown-border-radius: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .dropdown-item {
+    font-size: 0.95rem !important;
+    padding: 0.3rem 0.75rem !important;
+  }
+  .dropdown-item:active {
+    background-color: #999 !important;
+  }
+</style>

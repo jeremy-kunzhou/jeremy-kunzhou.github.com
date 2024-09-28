@@ -1,0 +1,62 @@
+---
+layout: default
+title: Blog Posts
+---
+
+<div class="container py-4">
+  {%- if page.title -%}
+  <p style="font-weight: 500 !important; text-transform: uppercase">
+    {{ page.title }}
+  </p>
+
+  {%- endif -%} {% if site.paginate %} {% assign posts = paginator.posts %} {%
+  else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%}
+  {%- if page.list_title -%}
+  <h2 class="post-list-heading">{{ page.list_title }}</h2>
+  {%- endif -%}
+  <ul class="posts">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts -%}
+    <li>
+      <span class="post-meta">{{ post.date | date: date_format }}</span> &raquo;
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+
+      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {% if site.paginate %}
+  <div class="pager d-flex mx-auto">
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination d-flex mx-auto">
+      {% if paginator.previous_page %}
+      <li>
+        <a href="{{ paginator.previous_page_path | relative_url }}"
+          >&laquo; Prev</a
+        >
+      </li>
+      {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+      paginator.page %}
+      <li><em>{{ page }}</em></li>
+      {% elsif page == 1 %}
+      <li><a href="{{ '/' | relative_url }}">{{ page }}</a></li>
+      {% else %}
+      <li>
+        <a
+          href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+          >{{ page }}</a
+        >
+      </li>
+      {% endif %} {% endfor %} {% if paginator.next_page %}
+      <li>
+        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+      </li>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+  {%- endif %} {%- endif -%}
+</div>

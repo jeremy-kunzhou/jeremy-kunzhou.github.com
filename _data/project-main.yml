@@ -1,0 +1,21 @@
+project:
+  - title: "Vee Finance"
+    image: "project/vee/vee_2.png"
+    venue: BlockChain
+    slug: DeFI platform
+  - title: "FTP"
+    image: "project/ftp/ftp_2.png"
+    venue: BlockChain
+    slug: DeFI platform
+  - title: "CornerMarket"
+    image: "project/cm/cm_app.png"
+    venue: BlockChain
+    slug: Marketplace
+  - title: "Cornermarket Homepage"
+    image: "project/cm/cm_campaign_page.png"
+    venue: Homepage
+    slug: Homepage
+  - title: "KikPOS"
+    image: "project/KikPOS/POS_shot1.png"
+    venue: Hospitality
+    slug: POS System

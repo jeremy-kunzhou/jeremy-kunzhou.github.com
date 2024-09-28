@@ -1,0 +1,121 @@
+---
+layout: default
+baseurl: /cv
+title: CV
+description: Curriculum vitae of Jeremy Zhou
+---
+
+{% assign publications = site.publication | group_by: 'year' | sort: 'name' | reverse %}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-12">
+            <main>
+                <header>
+                  <h1>Jeremy Zhou 
+                  <p><a href="#" class="cryptedmail"
+                    data-name="jeremy.kunzhou"
+                    data-domain="gmail"
+                    data-tld="com"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a><br><a href="https://jeremy-kunzhou.github.io">https://jeremy-kunzhou.github.io</a><br></p>
+                </header>
+                <section id="education">
+                  <h2>Education</h2>
+                  <div class="dated-entry">
+                      <div class="dated-date">2017 - 2019</div>
+                      <div class="dated-content"><b><a href="https://www.adelaide.edu.au/">The University of Adelaide</a></b>, Adelaide, Australia<br>
+                      Master of Software Engineering
+                      </div>
+                  </div>
+                  <div class="dated-entry">
+                      <div class="dated-date">2012 - 2016</div>
+                      <div class="dated-content"><b><a href="https://en.sdu.edu.cn/">Shandong University</a></b>, Shandong, China<br>
+                      Bachelor of Computer Science
+                      </div>
+                  </div>
+                </section>
+                <section id="employment">
+                  <h2>Employment</h2>
+                  <div class="dated-entry">
+                    <div class="dated-date">Apr 2021 - <br>Apr 2024</div>
+                    <div class="dated-content">
+                      <b>Blockprime</b><br>
+                      Frontend Engineer, Full Stack Engineer<br>
+                    </div>
+                  </div>
+                  <div class="dated-entry">
+                    <div class="dated-date">Nov 2012 - <br>Aug 2020</div>
+                    <div class="dated-content">
+                      <b>Kiktech Robotics</b><br>
+                      Software Enginneer, Co Founder <br>
+                    </div>
+                  </div>   
+                </section>
+                
+              </main>
+        </div>
+    </div>
+</div>
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+
+<style>
+    /* reset base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+    /* page header */
+    header { margin-bottom: 2rem; padding-left: 6.5rem; }
+    header h1 { font-size: 1.5rem; }
+    header p { margin: .5rem 0; font-size: 1rem !important}
+
+    main b {font-weight: 500}
+  
+    /* normal body content */
+    h2 { font-size: 1.1rem; margin-bottom: 0.75rem; margin-left: 6.5rem; text-transform: uppercase; }
+    h3 { border-bottom: 1px solid black; font-size: .9rem; margin: 1rem 0 .5rem 6.5rem }
+    p { margin-bottom: 0.5rem; }
+    a { color: inherit; /*#0000ee;*/ }
+    section { margin-bottom: 3rem; }
+  
+    /* misc */
+    .pdf { font-size: .9rem !important; font-weight: 300; margin-left: 1.5rem; white-space: nowrap;}
+    .pdf i { margin-right: .1rem;}
+    
+    .material { font-size: small; margin-left: .5rem;}
+    :global(i) {
+      padding-right: 4px !important
+    }
+  
+    /* dated entries */
+    .dated-entry { display: flex; flex-flow: row wrap; position: relative; margin-bottom: 1rem; }
+    .dated-date { width: 6.5rem; text-align: right; padding-top: .15rem; padding-right: 1.5rem; font-size: .8rem }
+    .dated-content { width: calc(100% - 6.5rem); font-size: .95rem}
+  
+    .oneline-entries { margin-bottom: 0.5rem; }
+    .oneline-entries .dated-entry { margin-bottom: 0; }
+  
+    /* hide extra awards info for now, not sure what to include */
+    #awards em { display: none; }
+    
+    .author-tooltip {
+      font-weight: 400;
+      font-size: .8rem !important;
+      text-align: center;
+    }
+  
+    /* on narrow displays, make the font smaller */
+    @media (max-width: 480px) {
+      html { font-size: 14px; }
+    }
+  
+    /* when printing, make the font smaller and the page full-width */
+    @media print {
+      html { font-size: 12px; }
+      main { margin-top: 0; max-width: 100%; }
+    }
+    </style>
