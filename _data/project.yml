@@ -20,7 +20,8 @@ project:
     description: >-
       Vee.Finance is a cross-chain lending protocol for traditional financial and crypto users
     tech: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress
-    id: vee
+    id: project-vee
+    show: true
   - title: Fountain Protocol
     image: project/ftp/ftp_1.png
     paper: https://ftp.cash
@@ -42,7 +43,8 @@ project:
     description: >-
       Fountain Protocol is a decentralized multi-chain lending platform built on Oasis and Arbitrum.
     tech: TypeScript, React, Redux Thunk, Nest.js, MySQL, RESTful service, Jest, Cypress
-    id: ftp
+    id: project-ftp
+    show: true
   - title: Cornermarket
     image: project/cm/cm_app.png
     paper: https://www.cornermarket.co/
@@ -61,7 +63,8 @@ project:
     description: >-
       CornerMarket is a Web3 shopping and payments ecosystem built on Sei Network.
     tech: React Native, Expo, MST, TypeScript, Nest.js, MySQL, Redis, RESTful service, Jest, Detox
-    id: cornermarket
+    id: project-cornermarket
+    show: true
   - detail: >
       <p>Cornermarket Campaign Page</p>
 
@@ -81,7 +84,8 @@ project:
     paper: https://cm-homepage.vercel.app/home
     description: >-
       Cornermarket Campaign Page
-    id: cornermarket-campaign
+    id: project-cornermarket-campaign
+    show: true
   - detail: >
       <p>The prototype of swarm system of Kiktech. A Real-Time turn-by-turn Navigator for Robot Control.</p>
 
@@ -99,7 +103,8 @@ project:
     title: Robot Navigator (Prototype)
     description: The prototype of swarm system of Kiktech. A Real-Time turn-by-turn Navigator for Robot Control.
     tech: C#, WPF
-    id: robot-navigator
+    id: project-robot-navigator
+    show: false
   - detail: >
       <p>A wonderful ordering system. It serves both restaurant and simple fast sale cafe including many useful feature specified designed for hospitality business like Sales Analysis Reporting System, Customized Menu Building System, Multiple Type of Printing Support.<br><br></p>
 
@@ -134,4 +139,5 @@ project:
     image: project/KikPOS/POS_shot1.png
     title: KikPOS - hospitality business solution
     description: It serves both restaurant and simple fast sale cafe including many useful feature specified designed for hospitality business
-    id: kikpos
+    id: project-kikpos
+    show: false
