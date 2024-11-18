@@ -68,6 +68,7 @@ description: Projects of Jeremy Zhou
               {% endif %}
               <p class="modal-link">
                 {% if proj.paper %}<a
+                  target="_blank"
                   href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"
                   ><i class="fas fa-external-link"></i>&nbsp; {% if proj.paper
                   contains 'http' %} {{ proj.paper }} {% else %} Paper {% endif
